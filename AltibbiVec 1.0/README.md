@@ -66,6 +66,10 @@ for term, score in most_similar:
 # get a word vector
 word_vector = model.wv[ word ]
 
+# find the cosine similarity between the vectors for any two words.
+print(model.wv.similarity(w1='المعده', w2='البطن'))
+
+
 ```
 
 ## Download
@@ -76,4 +80,5 @@ word_vector = model.wv[ word ]
 Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
 -----        	  | --------             | ----------          | ---------	    | --------- 	|
 Altibbi-FastText          | 8253725           | 270301 | **20**	        | [Download]() |
+Altibbi-FastText          | 8253725           | 270301 | **50**	        | [Download]() |
 Altibbi-FastText          | 8253725           | 270301 | **100**	    | [Download]() |
