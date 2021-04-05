@@ -1,4 +1,4 @@
-## AraVec 1.0
+## AltibbiVec 1.0
 
 ## How To Use
 These models were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
