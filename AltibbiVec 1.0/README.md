@@ -24,38 +24,18 @@ model = gensim.models.Word2Vec.load('Altibbi-FastText')
 
 # Clean/Normalize Arabic Text
 def clean_str(text):
-    text = str(text)
-    
-    search = ["أ","إ","آ","ة","_","-","/",".","،"," و "," يا ",'"',"ـ","'","ى","\\",'\n', '\t','&quot;','?','؟','!']
-    replace = ["ا","ا","ا","ه"," "," ","","",""," و"," يا","","","","ي","",' ', ' ',' ',' ? ',' ؟ ',' ! ']
-    
-    #remove english words
+    chars = '[٠١٢٣٤٥٦٧٨٩0123456789[؟|$|.|!_،,@!#%^&*();<>":``.//\',\']'
+    text = re.sub(r'[^\w]+', ' ', text)
     text = re.sub(r'[a-zA-Z]', r'', text)
-    
-    #remove tashkeel
-    p_tashkeel = re.compile(r'[\u0617-\u061A\u064B-\u0652]')
-    text = re.sub(p_tashkeel,"", text)
-    
-    #remove longation
-    p_longation = re.compile(r'(.)\1+')
-    subst = r"\1\1"
-    text = re.sub(p_longation, subst, text)
-    
+    text = re.sub(chars, r'', str(text))
+    text = re.sub(r'\s+', r' ', text, flags=re.I)  # remove multiple spaces with single space
     text = text.replace('وو', 'و')
     text = text.replace('يي', 'ي')
     text = text.replace('اا', 'ا')
     text = text.replace('\n', ' ')
 
-    
-    for i in range(0, len(search)):
-        text = text.replace(search[i], replace[i])
-    
-    #trim    
-    text = text.strip()
-
     return text
 
-# python 3.X
 word = clean_str(u'المعده')
 
 # find and print the most similar terms to a word
@@ -75,10 +55,7 @@ print(model.wv.similarity(w1='المعده', w2='البطن'))
 ## Download
 
 
-### Models
-
-Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
------        	  | --------             | ----------          | ---------	    | --------- 	|
-Altibbi-FastText          | 8253725           | 270301 | **20**	        | [Download]() |
-Altibbi-FastText          | 8253725           | 270301 | **50**	        | [Download]() |
-Altibbi-FastText          | 8253725           | 270301 | **100**	    | [Download]() |
+### FastText Models
+ | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
+ | --------             | ----------          | ---------	    | --------- 	|
+ | 8,253,725              | 270,301              | **20**	        | [Download]()  |
