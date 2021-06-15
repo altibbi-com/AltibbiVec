@@ -3,11 +3,11 @@
  
 AltibbiVec is a domain-specific word embedding model for health and medical-related content in the Arabic context. AltibbiVec can be applied to various NLP applications to serve the research community in the medical NLP in Arabic.
 
-It is developed based on three well-known word embedding techniques: Word2Vec, FastText, and GloVe. Besides, it is trained with more than 1.8 million medical consultations and questions obtained from Altibbi's databases. Altibbi is a telemedicine company that provides the MENA region with simplified medical and health knowledge alongside telehealth services.
+It is developed based on three well-known word embedding techniques: Word2Vec, FastText, and GloVe, and across three dimensions: 100, 200, and 300. Besides, it is trained with more than 1.8 million medical consultations and questions obtained from Altibbi's databases. Altibbi is a telemedicine company that provides the MENA region with simplified medical and health knowledge alongside telehealth services.
 
-The three developed models were evaluated by word clustering, word similarity, and question classification based on the specialty type. The question classification was performed by the BiLSTM neural classifier. Hence, Word2Vec and FastText performed the best in similarity and word clustering, whereas FastText had the best result regarding the question classification.
+The three developed models were evaluated by word clustering, word similarity, and question classification based on the specialty type. The question classification was performed by the BiLSTM neural classifier. Hence, Word2Vec and FastText performed the best in similarity and word clustering, whereas FastText had the best result regarding the question classification. 
 
-This model can be improved further by using BERT and language models as more data is available.
+Generally, the best obtained models were at dimenion **100**. The developed models can be improved further by using BERT and language models as more data is available.
 
 
 ## How To Use
@@ -64,8 +64,12 @@ print(model.wv.similarity(w1='المعده', w2='البطن'))
 
 ## Download
 
+### Word2Vec Model
+ | Docs No.               | Dimension	    | Download|
+ | --------               | ---------	    | --------- 	|
+ | 1,464,411              | **100**	    | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
 
-### FastText Models
+### FastText Model
  | Docs No.             | Vocabs No.    | Dimension		| Download      |
  | --------             | ----------          | ---------	    | --------- 	|
  | 8,253,725              | 270,301              | **100**	        | [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
