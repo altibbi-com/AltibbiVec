@@ -11,17 +11,27 @@ Generally, the best obtained models were at dimenion **100**. The developed mode
 
 ## Prerequisites
 
-These models were built using [gensim](https://radimrehurek.com/gensim/) Python library. Here's a simple code for loading and using
-one of the models by following these steps:
+The [gensim](https://radimrehurek.com/gensim/) Python library was used to tokenize and build the Word2Vec. 
+In order to use AltibbiVec-Word2Vec you need to install it.
+
 1. Install `gensim` >= **3.4** and `nltk` >= **3.2** using either `pip` or `conda`
 
 >> pip install gensim nltk
-
 >> conda install gensim nltk
 
+To use AltibbiVec-FastText, install the FastText library using Google Colaboratory:
+
+>>!pip install fasttext
+or
+>> pip install fasttext
+>> conda install -c conda-forge fasttext
+
+To use AltibbiVec-Glove, install the Glove library using:
+
+>>pip install glove_python
 
 ## How To Use
-
+Here's a simple code for loading and using one of the models by following these steps:
 
 2. extract the compressed model files to a directory [ e.g. `Altibbi-FastText` ]
 3. keep the **.npy** files, alongside the **.mdl**. You are gonna to load the file with no extension, like what you'll see in the following code.
