@@ -17,13 +17,16 @@ In order to use AltibbiVec-Word2Vec you need to install it.
 1. Install `gensim` >= **3.4** and `nltk` >= **3.2** using either `pip` or `conda`
 
 >> pip install gensim nltk
+
 >> conda install gensim nltk
 
 To use AltibbiVec-FastText, install the FastText library using Google Colaboratory:
 
 >>!pip install fasttext
+
 or
 >> pip install fasttext
+
 >> conda install -c conda-forge fasttext
 
 To use AltibbiVec-Glove, install the Glove library using:
