@@ -100,12 +100,13 @@ word_vector_g = list(model.word_vectors[model.dictionary[word]])
 
 ## Download
 
+
 ### Word2Vec Model
- | Docs No.    |Unique vocabs |Structure|  | Dimension	 | Download|
- | --------    | -------      | --------   | ---------	 | --------- |
- | 1,464,411   |166,293       |Skip gram   | **100**     | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
- | 1,464,411   |166,293       |Skip gram   | **200**	 | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
- | 1,464,411   |166,293       |Skip gram   | **300**	 | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
+ | Docs No.      |Unique vocabs     |Structure|      | Dimension	 | Download|
+ | --------       | -------         | --------       | ---------	 | --------- |
+ | 1,464,411      |166,293         |Skip gram        | **100**           | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
+ | 1,464,411      |166,293         |Skip gram        | **200**	        | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
+ | 1,464,411     |166,293          |Skip gram        | **300**	     | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
  
 
 
