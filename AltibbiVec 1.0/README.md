@@ -9,8 +9,8 @@ The three developed models were evaluated by word clustering, word similarity, a
 
 Generally, the best obtained models were at dimenion **100**. The developed models can be improved further by using BERT and language models as more data is available.
 
+## Prerequisites
 
-## How To Use
 These models were built using [gensim](https://radimrehurek.com/gensim/) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
 1. Install `gensim` >= **3.4** and `nltk` >= **3.2** using either `pip` or `conda`
@@ -18,6 +18,10 @@ one of the models by following these steps:
 >> pip install gensim nltk
 
 >> conda install gensim nltk
+
+
+## How To Use
+
 
 2. extract the compressed model files to a directory [ e.g. `Altibbi-FastText` ]
 3. keep the **.npy** files, alongside the **.mdl**. You are gonna to load the file with no extension, like what you'll see in the following code.
@@ -65,23 +69,23 @@ print(model.wv.similarity(w1='المعده', w2='البطن'))
 ## Download
 
 ### Word2Vec Model
- | Docs No.               | Dimension	    | Download|
- | --------               | ---------	    | --------- 	|
- | 1,464,411              | **100**	    | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
- | 1,464,411              | **200**	    | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
- | 1,464,411              | **300**	    | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
+ | Docs No.    |Unique vocabs |Structure|  | Dimension	 | Download|
+ | --------    | -------      | --------   | ---------	 | --------- |
+ | 1,464,411   |166,293       |Skip gram   | **100**     | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
+ | 1,464,411   |166,293       |Skip gram   | **200**	 | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
+ | 1,464,411   |166,293       |Skip gram   | **300**	 | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
 
 ### FastText Model
- | Docs No.             | Dimension		| Download  |
- | --------             | ----------            | --------- |  
- | 1,464,411            | **100**	        | [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
- | 1,464,411            | **200**	        | [Download](https://drive.google.com/file/d/1F7dI9LvbxTupO21sOXG630U1SM1bEoXv/view?usp=sharing)  |
- | 1,464,411            | **300**	        | [Download](https://drive.google.com/file/d/1nzAs8pWFae6nFrr0vRQ-VwoGUHnBTqa0/view?usp=sharing)  |  
+ | Docs No.    |Unique vocabs |Structure| | Dimension	| Download  |
+ | --------    | -------      | --------  | ----------  | --------- |  
+ | 1,464,411   |166,293       |CBOW       | **100**	| [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
+ | 1,464,411   |166,293       |CBOW       | **200**	| [Download](https://drive.google.com/file/d/1F7dI9LvbxTupO21sOXG630U1SM1bEoXv/view?usp=sharing)  |
+ | 1,464,411   |166,293       |CBOW       | **300**	| [Download](https://drive.google.com/file/d/1nzAs8pWFae6nFrr0vRQ-VwoGUHnBTqa0/view?usp=sharing)  |  
  
  
  ### GloVe Model
- | Docs No.             | Dimension		| Download  |
- | --------             | ----------            | --------- |  
- | 1,464,411            | **100**	        | [Download](https://drive.google.com/file/d/1oQaSzo5ZARuv4uKq9g73MU-PUeCq1P-B/view?usp=sharing)  |
- | 1,464,411            | **200**	        | [Download](https://drive.google.com/file/d/1-1seHUxp7C6CS9sR8nTWisvhQEYR7yHg/view?usp=sharing)  |
- | 1,464,411            | **300**	        | [Download](https://drive.google.com/file/d/1-2x1oZEngFCXBeM3c3XfyLrf2Izm9uSy/view?usp=sharing)  |  
+ | Docs No.  |Unique vocabs       | Dimension		| Download  |
+ | --------  | -------            | ----------          | --------- |  
+ | 1,464,411 |166,293             | **100**	        | [Download](https://drive.google.com/file/d/1oQaSzo5ZARuv4uKq9g73MU-PUeCq1P-B/view?usp=sharing)  |
+ | 1,464,411 |166,293             | **200**	        | [Download](https://drive.google.com/file/d/1-1seHUxp7C6CS9sR8nTWisvhQEYR7yHg/view?usp=sharing)  |
+ | 1,464,411 |166,293             | **300**	        | [Download](https://drive.google.com/file/d/1-2x1oZEngFCXBeM3c3XfyLrf2Izm9uSy/view?usp=sharing)  |  
