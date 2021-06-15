@@ -1,5 +1,15 @@
 ## AltibbiVec 1.0
 
+ 
+AltibbiVec is a domain-specific word embedding model for health and medical-related content in the Arabic context. AltibbiVec can be applied to various NLP applications to serve the research community in the medical NLP in Arabic.
+
+It is developed based on three well-known word embedding techniques: Word2Vec, FastText, and GloVe. Besides, it is trained with more than 1.8 million medical consultations and questions obtained from Altibbi's databases. Altibbi is a telemedicine company that provides the MENA region with simplified medical and health knowledge alongside telehealth services.
+
+The three developed models were evaluated by word clustering, word similarity, and question classification based on the specialty type. The question classification was performed by the BiLSTM neural classifier. Hence, Word2Vec and FastText performed the best in similarity and word clustering, whereas FastText had the best result regarding the question classification.
+
+This model can be improved further by using BERT and language models as more data is available.
+
+
 ## How To Use
 These models were built using [gensim](https://radimrehurek.com/gensim/) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
@@ -10,7 +20,7 @@ one of the models by following these steps:
 >> conda install gensim nltk
 
 2. extract the compressed model files to a directory [ e.g. `Altibbi-FastText` ]
-3. keep the **.npy** files. You are gonna to load the file with no extension, like what you'll see in the following code.
+3. keep the **.npy** files, alongside the **.mdl**. You are gonna to load the file with no extension, like what you'll see in the following code.
 4. run this python code to load and use the model
 
 ```python
@@ -56,6 +66,6 @@ print(model.wv.similarity(w1='المعده', w2='البطن'))
 
 
 ### FastText Models
- | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
+ | Docs No.             | Vocabs No.    | Dimension		| Download      |
  | --------             | ----------          | ---------	    | --------- 	|
  | 8,253,725              | 270,301              | **20**	        | [Download]()  |
