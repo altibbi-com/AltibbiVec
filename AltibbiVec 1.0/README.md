@@ -104,30 +104,15 @@ word_vector_g = list(model.word_vectors[model.dictionary[word]])
 
 ```
 
-## Download
-
-
-### Word2Vec Model
+### Download Models
  | Docs No.      |Structure        | Dimension	 | Download|
  | --------      | -------         | ---------	 | --------- |
- | 1,464,411     |Skip gram        | **100**     | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
- | 1,464,411     |Skip gram        | **200**	 | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
- | 1,464,411     |Skip gram        | **300**	 | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
- 
-
-
-### FastText Model
- | Docs No.    |Structure| | Dimension | Download  |
- |:---         | :---      | :---      | :---      |  
- | 1,464,411   |CBOW       | **100**   | [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
- | 1,464,411   |CBOW       | **200**   | [Download](https://drive.google.com/file/d/1F7dI9LvbxTupO21sOXG630U1SM1bEoXv/view?usp=sharing)  |
- | 1,464,411   |CBOW       | **300**   | [Download](https://drive.google.com/file/d/1nzAs8pWFae6nFrr0vRQ-VwoGUHnBTqa0/view?usp=sharing)  |  
- 
- 
- 
- ### GloVe Model
- | Docs No.  |Unique vocabs       | Dimension		| Download  |
- | --------  | -------            | ----------          | --------- |  
- | 1,464,411 |166,293             | **100**	        | [Download](https://drive.google.com/file/d/1oQaSzo5ZARuv4uKq9g73MU-PUeCq1P-B/view?usp=sharing)  |
- | 1,464,411 |166,293             | **200**	        | [Download](https://drive.google.com/file/d/1-1seHUxp7C6CS9sR8nTWisvhQEYR7yHg/view?usp=sharing)  |
- | 1,464,411 |166,293             | **300**	        | [Download](https://drive.google.com/file/d/1-2x1oZEngFCXBeM3c3XfyLrf2Izm9uSy/view?usp=sharing)  |  
+ | 1,464,411     |Word2Vec (Skip gram)        | **100**     | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
+ | 1,464,411     |Word2Vec (Skip gram)        | **200**	 | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
+ | 1,464,411     |Word2Vec (Skip gram)        | **300**	 | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
+ | 1,464,411   |FastText (CBOW)       | **100**   | [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
+ | 1,464,411   |FastText (CBOW)       | **200**   | [Download](https://drive.google.com/file/d/1F7dI9LvbxTupO21sOXG630U1SM1bEoXv/view?usp=sharing)  |
+ | 1,464,411   |FastText (CBOW)       | **300**   | [Download](https://drive.google.com/file/d/1nzAs8pWFae6nFrr0vRQ-VwoGUHnBTqa0/view?usp=sharing)  |  
+ | 1,464,411 |GloVe            | **100**	        | [Download](https://drive.google.com/file/d/1oQaSzo5ZARuv4uKq9g73MU-PUeCq1P-B/view?usp=sharing)  |
+ | 1,464,411 |GloVe            | **200**	        | [Download](https://drive.google.com/file/d/1-1seHUxp7C6CS9sR8nTWisvhQEYR7yHg/view?usp=sharing)  |
+ | 1,464,411 |GloVe              | **300**	        | [Download](https://drive.google.com/file/d/1-2x1oZEngFCXBeM3c3XfyLrf2Izm9uSy/view?usp=sharing)  |  
