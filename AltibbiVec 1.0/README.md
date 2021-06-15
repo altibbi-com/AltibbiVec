@@ -31,50 +31,67 @@ or
 
 To use AltibbiVec-Glove, install the Glove library using:
 
->>pip install glove_python
+>>pip install glove-python-binary
 
 ## How To Use
-Here's a simple code for loading and using one of the models by following these steps:
+Here is a simple code for loading and using either Word2Vec, FastText, or GloVe. As follows. 
 
-2. extract the compressed model files to a directory [ e.g. `Altibbi-FastText` ]
-3. keep the **.npy** files, alongside the **.mdl**. You are gonna to load the file with no extension, like what you'll see in the following code.
-4. run this python code to load and use the model
+1. Install the required libraries.
+2. Download the model file that is in **.txt** to a directory, e.g., ``altibbi_models.''
+3. Run the following code to load and use the models:
 
 ```python
 
 # -*- coding: utf8 -*-
 import gensim
+import fasttext
+from glove import Glove
 import re
 
-# load the model
-model = gensim.models.Word2Vec.load('Altibbi-FastText')
+BASE_PATH = "here ur root path to altibbi_models dir"
 
-# Clean/Normalize Arabic Text
-def clean_str(text):
+# Clean/normalize the text
+def clean_doc(doc: str):
+    """
+    :param doc:
+    :return: normalized string
+    """
     chars = '[٠١٢٣٤٥٦٧٨٩0123456789[؟|$|.|!_،,@!#%^&*();<>":``.//\',\']'
-    text = re.sub(r'[^\w]+', ' ', text)
-    text = re.sub(r'[a-zA-Z]', r'', text)
-    text = re.sub(chars, r'', str(text))
-    text = re.sub(r'\s+', r' ', text, flags=re.I)  # remove multiple spaces with single space
-    text = text.replace('وو', 'و')
-    text = text.replace('يي', 'ي')
-    text = text.replace('اا', 'ا')
-    text = text.replace('\n', ' ')
+    doc = re.sub(r'[^\w]+', ' ', doc)
+    doc = re.sub(r'[a-zA-Z]', r'', doc)
+    doc = re.sub(chars, r'', str(doc))
+    doc = re.sub(r'\s+', r' ', doc, flags=re.I)  # remove multiple spaces with single space
+    doc = " ".join([word for word in doc.split() if len(word) > 2])
+    doc = doc.replace('\n', ' ')
+    return doc
 
-    return text
+word = clean_doc(u'المعده')
 
-word = clean_str(u'المعده')
+#Load AltibbiVec-Word2Vec model
+model = gensim.models.KeyedVectors.load_word2vec_format(BASE_PATH+'/word2vec-100.txt')
 
-# find and print the most similar terms to a word
+#Find and print the most similar terms to a word
 most_similar = model.wv.most_similar( word )
 for term, score in most_similar:
-	print(term, score)
+    print(term, score)
 	
-# get a word vector
-word_vector = model.wv[ word ]
+#Get a word vector
+word_vector_w = list(model.wv.word_vec(word))
 
-# find the cosine similarity between the vectors for any two words.
+#Find the cosine similarity between the vectors for any two words.
 print(model.wv.similarity(w1='المعده', w2='البطن'))
+
+#Load AltibbiVec-fasttext model
+modelf = fasttext.load_model(BASE_PATH+'/fasttext-100.txt')
+
+#Get a word vector
+word_vector_f = list(modelf.get_word_vector(word))
+ 
+#Load AltibbiVec-Glove model
+modelg = Glove.load(BASE_PATH+'/glove-100.txt')
+
+#Get a word vector
+word_vector_g = list(model.word_vectors[model.dictionary[word]])
 
 
 ```
