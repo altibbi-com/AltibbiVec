@@ -68,4 +68,4 @@ print(model.wv.similarity(w1='المعده', w2='البطن'))
 ### FastText Models
  | Docs No.             | Vocabs No.    | Dimension		| Download      |
  | --------             | ----------          | ---------	    | --------- 	|
- | 8,253,725              | 270,301              | **20**	        | [Download]()  |
+ | 8,253,725              | 270,301              | **100**	        | [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
