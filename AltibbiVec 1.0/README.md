@@ -20,7 +20,7 @@ In order to use AltibbiVec-Word2Vec you need to install it.
 
 >> conda install gensim nltk
 
-To use AltibbiVec-FastText, install the FastText library using Google Colaboratory:
+To use AltibbiVec-FastText, install the [FastText](https://fasttext.cc/) library using Google Colaboratory:
 
 >>!pip install fasttext
 
@@ -29,15 +29,15 @@ or
 
 >> conda install -c conda-forge fasttext
 
-To use AltibbiVec-Glove, install the Glove library using:
+To use AltibbiVec-Glove, install the [Glove](https://github.com/maciejkula/glove-python) library using:
 
 >>pip install glove-python-binary
 
 ## How To Use
-Here is a simple code for loading and using either Word2Vec, FastText, or GloVe. As follows. 
+The following script shows the code for loading and using either Word2Vec, FastText, or GloVe models. 
 
 1. Install the required libraries.
-2. Download the model file that is in **.txt** to a directory, e.g., ``altibbi_models.''
+2. Download the model file that is in **.txt** to a directory, e.g., "altibbi_models".
 3. Run the following code to load and use the models:
 
 ```python
@@ -67,6 +67,7 @@ def clean_doc(doc: str):
 
 word = clean_doc(u'المعده')
 
+#**************************************************************************************************#
 #Load AltibbiVec-Word2Vec model
 model = gensim.models.KeyedVectors.load_word2vec_format(BASE_PATH+'/word2vec-100.txt')
 
@@ -81,18 +82,19 @@ word_vector_w = list(model.wv.word_vec(word))
 #Find the cosine similarity between the vectors for any two words.
 print(model.wv.similarity(w1='المعده', w2='البطن'))
 
+#**************************************************************************************************#
 #Load AltibbiVec-fasttext model
 modelf = fasttext.load_model(BASE_PATH+'/fasttext-100.txt')
 
 #Get a word vector
 word_vector_f = list(modelf.get_word_vector(word))
- 
+
+#**************************************************************************************************#
 #Load AltibbiVec-Glove model
 modelg = Glove.load(BASE_PATH+'/glove-100.txt')
 
 #Get a word vector
 word_vector_g = list(model.word_vectors[model.dictionary[word]])
-
 
 ```
 
@@ -104,6 +106,8 @@ word_vector_g = list(model.word_vectors[model.dictionary[word]])
  | 1,464,411   |166,293       |Skip gram   | **100**     | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
  | 1,464,411   |166,293       |Skip gram   | **200**	 | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
  | 1,464,411   |166,293       |Skip gram   | **300**	 | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
+ 
+
 
 ### FastText Model
  | Docs No.    |Unique vocabs |Structure| | Dimension	| Download  |
@@ -111,6 +115,7 @@ word_vector_g = list(model.word_vectors[model.dictionary[word]])
  | 1,464,411   |166,293       |CBOW       | **100**	| [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
  | 1,464,411   |166,293       |CBOW       | **200**	| [Download](https://drive.google.com/file/d/1F7dI9LvbxTupO21sOXG630U1SM1bEoXv/view?usp=sharing)  |
  | 1,464,411   |166,293       |CBOW       | **300**	| [Download](https://drive.google.com/file/d/1nzAs8pWFae6nFrr0vRQ-VwoGUHnBTqa0/view?usp=sharing)  |  
+ 
  
  
  ### GloVe Model
