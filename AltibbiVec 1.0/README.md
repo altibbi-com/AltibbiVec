@@ -9,13 +9,11 @@ The three developed models were evaluated by word clustering, word similarity, a
 
 Generally, the best obtained models were at dimenion **100**. The developed models can be improved further by using BERT and language models as more data is available.
 
-`The following figures shows the capability of the models in identifying the similar symptom terms`.
+`The following figures shows the capability of the models in identifying the similar symptom terms, first is Word2Vec, then Word2Vec translated, FastText, and GloVe from left to right in order`.
 
-![Altibbi_w2v](https://previews.dropbox.com/p/thumb/ABMFS4RZfsMAz8Cw8YSPHh-iT0oodGSUmRjLMzwU9g48wHKGAXY-Ik_nQ6rQfxs-EGFUHRCLa8qBK9MEAeyVtfE2LZPGs8pATHRDSCvICjw9NwzzWrXYwM1sJp8pbimC_ezj_IP40602DyvQkcbKpMAD55laDXD59EqZ39hv1H7JQMt1fG_HonZafQqWZE5OYoqykcn-h4-Mr7vrS8ZuW5x8Www34rv7vrCZygnBNU-SVKwSpPLIgqcNDcqiquvliZX1KVQzVtHfqeJQ3ir5RhTQaulNXWQHDLo_3vD0gM-pmtVQenviXsDntF8Y8Qrq-Av35teNMsoSqWMfZ-HHSC7JjqrQmmDUtJGJnLaDh7Relw/p.jpeg?fv_content=true&size_mode=5)
+<img src="https://raw.githubusercontent.com/altibbi-com/AltibbiVec/main/AltibbiVec%201.0/w2v_100_clus2.png" width="400" height="400">  <img src="https://raw.githubusercontent.com/altibbi-com/AltibbiVec/main/AltibbiVec%201.0/w2v_en_100_clus.png" width="400" height="400">
 
-![Altibbi_w2v_EN](https://drive.google.com/file/d/1JLTkbFDo_-on4uX-2xIVTJELjzmqGyE8/view?usp=sharing)
-![Altibbi_FastText](https://drive.google.com/file/d/15T0dIKqraOPeZpsOSN2roXt7IdWlRIow/view?usp=sharing)
-![Altibbi_GloVe](https://drive.google.com/file/d/1DLgZnx-vvJJFZfSkQxeRyOyaUggFPWlw/view?usp=sharing)
+<img src="https://raw.githubusercontent.com/altibbi-com/AltibbiVec/main/AltibbiVec%201.0/ft_100_clus2-1.png" width="400" height="400"> <img src="https://raw.githubusercontent.com/altibbi-com/AltibbiVec/main/AltibbiVec%201.0/gv_100_clus-1.png" width="400" height="400">
 
 ## Prerequisites
 
