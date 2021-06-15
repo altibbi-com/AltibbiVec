@@ -9,6 +9,14 @@ The three developed models were evaluated by word clustering, word similarity, a
 
 Generally, the best obtained models were at dimenion **100**. The developed models can be improved further by using BERT and language models as more data is available.
 
+`The following figures shows the capability of the models in identifying the similar symptom terms`.
+
+![Altibbi_w2v](https://previews.dropbox.com/p/thumb/ABMFS4RZfsMAz8Cw8YSPHh-iT0oodGSUmRjLMzwU9g48wHKGAXY-Ik_nQ6rQfxs-EGFUHRCLa8qBK9MEAeyVtfE2LZPGs8pATHRDSCvICjw9NwzzWrXYwM1sJp8pbimC_ezj_IP40602DyvQkcbKpMAD55laDXD59EqZ39hv1H7JQMt1fG_HonZafQqWZE5OYoqykcn-h4-Mr7vrS8ZuW5x8Www34rv7vrCZygnBNU-SVKwSpPLIgqcNDcqiquvliZX1KVQzVtHfqeJQ3ir5RhTQaulNXWQHDLo_3vD0gM-pmtVQenviXsDntF8Y8Qrq-Av35teNMsoSqWMfZ-HHSC7JjqrQmmDUtJGJnLaDh7Relw/p.jpeg?fv_content=true&size_mode=5)
+
+![Altibbi_w2v_EN](https://drive.google.com/file/d/1JLTkbFDo_-on4uX-2xIVTJELjzmqGyE8/view?usp=sharing)
+![Altibbi_FastText](https://drive.google.com/file/d/15T0dIKqraOPeZpsOSN2roXt7IdWlRIow/view?usp=sharing)
+![Altibbi_GloVe](https://drive.google.com/file/d/1DLgZnx-vvJJFZfSkQxeRyOyaUggFPWlw/view?usp=sharing)
+
 ## Prerequisites
 
 The [gensim](https://radimrehurek.com/gensim/) Python library was used to tokenize and build the Word2Vec. 
@@ -102,20 +110,20 @@ word_vector_g = list(model.word_vectors[model.dictionary[word]])
 
 
 ### Word2Vec Model
- | Docs No.      |Unique vocabs         | Dimension	 | Download|
- | --------       | -------             | ---------	 | --------- |
- | 1,464,411      |166,293              | **100**           | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
- | 1,464,411      |166,293                | **200**	        | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
- | 1,464,411     |166,293               | **300**	     | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
+ | Docs No.      |Structure        | Dimension	 | Download|
+ | --------      | -------         | ---------	 | --------- |
+ | 1,464,411     |Skip gram        | **100**     | [Download](https://drive.google.com/file/d/1-YdvvxEQWxrLgn2tsoS7nvjbz2cn4XOn/view?usp=sharing)  |
+ | 1,464,411     |Skip gram        | **200**	 | [Download](https://drive.google.com/file/d/1dHxzcy2PhlX4abHMFvHew01gLhllpCDn/view?usp=sharing)  |
+ | 1,464,411     |Skip gram        | **300**	 | [Download](https://drive.google.com/file/d/1RFCe3voj6u3W9argTSahB9R3T7P9ojlj/view?usp=sharing)  |
  
 
 
 ### FastText Model
- | Docs No.    |Unique vocabs |Structure| | Dimension	| Download  |
- | --------    | -------      | --------  | ----------  | --------- |  
- | 1,464,411   |166,293       |CBOW       | **100**	| [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
- | 1,464,411   |166,293       |CBOW       | **200**	| [Download](https://drive.google.com/file/d/1F7dI9LvbxTupO21sOXG630U1SM1bEoXv/view?usp=sharing)  |
- | 1,464,411   |166,293       |CBOW       | **300**	| [Download](https://drive.google.com/file/d/1nzAs8pWFae6nFrr0vRQ-VwoGUHnBTqa0/view?usp=sharing)  |  
+ | Docs No.    |Structure| | Dimension | Download  |
+ |:---         | :---      | :---      | :---      |  
+ | 1,464,411   |CBOW       | **100**   | [Download](https://drive.google.com/file/d/1a9frdABNNZAkocbUzGm8C5K2zP9w1q0O/view?usp=sharing)  |
+ | 1,464,411   |CBOW       | **200**   | [Download](https://drive.google.com/file/d/1F7dI9LvbxTupO21sOXG630U1SM1bEoXv/view?usp=sharing)  |
+ | 1,464,411   |CBOW       | **300**   | [Download](https://drive.google.com/file/d/1nzAs8pWFae6nFrr0vRQ-VwoGUHnBTqa0/view?usp=sharing)  |  
  
  
  
